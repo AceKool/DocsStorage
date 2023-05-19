@@ -17,17 +17,13 @@ public class Student {
     @Column(name = "id")
     private int id;
 
-    @Column(name = "firstName")
-    private String firstName;
-    @Column(name = "lastName")
-    private String lastName;
+    @Column(name = "fullName")
+    private String fullName;
     @Column(name = "studentId")
     private String studentId;
 
-    public void updateClient(Client client){
-    if(student.firstName != null)    { this.firstName = student.firstName; }
-
-    if(student.lastName != null)     { this.lastName = student.lastName; }
+    public void updateStudent(Student student){
+    if(student.fullName != null)    { this.fullName = student.fullName; }
 
     if(student.studentId != null)      { this.studentId = student.studentId; }
 

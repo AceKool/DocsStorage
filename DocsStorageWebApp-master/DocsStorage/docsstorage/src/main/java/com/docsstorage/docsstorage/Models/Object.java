@@ -19,6 +19,8 @@ public class Object {
     private String description;
     @Column(name = "capacity")
     private Float capacity;
+    @Column(name = "filepath")
+    private String filepath;
 
 
     public void updateObject(Object object) {
@@ -28,11 +30,13 @@ public class Object {
 
         if (object.capacity != null)    { this.capacity = object.capacity; }
 
+        if (object.filepath != null)    { this.filepath = object.filepath; }
+
         if(object.order != null)        { this.order = object.order; }
 
     }
 
-    // Connection with Deals table
+    // Connection with DEALS table
     @ManyToOne
     @JoinColumn(name= "deal_id")
     private Order order;

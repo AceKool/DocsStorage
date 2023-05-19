@@ -7,5 +7,5 @@ import java.sql.Date;
 import java.util.List;
 
 public interface DealRepo extends JpaRepository<Deal, Integer> {
-    //List<Deal> findByDate(Date date_of_order);
+    List<Deal> findByDate(Date date_of_order);
 }

@@ -1,6 +1,6 @@
 package com.docsstorage.docsstorage.Repos;
 
-import com.docsstorage.docsstorage.Models.Client;
+import com.docsstorage.docsstorage.Models.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

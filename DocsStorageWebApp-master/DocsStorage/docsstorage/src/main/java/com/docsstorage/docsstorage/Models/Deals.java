@@ -36,7 +36,7 @@ public class Deal {
     @OneToMany(mappedBy = "deal")
     private List<Object> objects;
 
-    // Connection with CLIENT table
+    // Connection with STUDENT table
     @ManyToOne
     @JoinColumn(name = "students_id_fk", referencedColumnName = "id")
     private Client student;
